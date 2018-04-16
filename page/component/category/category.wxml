@@ -6,7 +6,7 @@
     </view>
 
     <scroll-view class="categroy-right" scroll-y="{{isScroll}}" scroll-into-view="{{toView}}" scroll-with-animation="true">
-         <block wx:for="{{detail}}" wx:for-index wx:key="idx">
+         <block wx:for="{{category}}" wx:for-index wx:key="idx">
             <view id="{{item.id}}" class="cate-box">
                 <view class="cate-banner">
                     <image src="{{item.banner}}"></image>

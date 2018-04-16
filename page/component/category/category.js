@@ -1,17 +1,34 @@
 Page({
     data: {
         category: [
-            {name:'果味',id:'guowei'},
-            {name:'蔬菜',id:'shucai'},
-            {name:'炒货',id:'chaohuo'},
-            {name:'点心',id:'dianxin'},
-            {name:'粗茶',id:'cucha'},
-            {name:'淡饭',id:'danfan'}
+          { name: '水果', id: 'shuiguo', banner: '/image/c1.png', 
+            cate: '水果', detail: [{ thumb: '/image/c2.png', name: '橘子' }, { thumb: '/image/c2.png', name: '苹果' }]
+            },
+          {
+            name: '蔬菜', id: 'shucai', banner: '/image/c1.png',
+            cate: '蔬菜', detail: [{ thumb: '/image/c2.png', name: '清炒菠菜' }, { thumb: '/image/c2.png', name: '蒜蓉油麦菜' }]
+            },
+          {
+            name: '有辣', id: 'chaohuo', banner: '/image/c1.png',
+            cate: '有辣', detail: [{ thumb: '/image/c2.png', name: '农家小炒肉' }, { thumb: '/image/c2.png', name: '野山椒牛肉' }]
+            },
+          {
+            name: '不辣', id: 'dianxin', banner: '/image/c1.png',
+            cate: '不辣', detail: [{ thumb: '/image/c2.png', name: '烧鹅饭' }, { thumb: '/image/c2.png', name: '白切鸡饭' }]
+            },
+          {
+            name: '面食', id: 'cucha', banner: '/image/c1.png',
+            cate: '面食', detail: [{ thumb: '/image/c2.png', name: '刀削面' }, { thumb: '/image/c2.png', name: '兰州拉面' }]
+            },
+          {
+            name: '饮料', id: 'danfan', banner: '/image/c1.png',
+            cate: '饮料', detail: [{ thumb: '/image/c2.png', name: '奶茶' }, { thumb: '/image/c2.png', name: '可乐' }]
+            }
         ],
         detail:[],
         curIndex: 0,
         isScroll: false,
-        toView: 'guowei'
+        toView: 'shuiguo'
     },
     onReady(){
         var self = this;

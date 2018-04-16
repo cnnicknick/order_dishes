@@ -108,3 +108,9 @@
     color: #999;
     text-align: center;
 }
+
+.clear-cate {
+  margin:20px auto;
+  width:120px;
+  font-size: 14px;
+}

@@ -1,5 +1,6 @@
-# wxapp-mall
 微信小程序 商城（开发一个公司内部用点餐平台）
+﻿# wxapp-mall
+微信小程序 公司内部用点餐平台 
 
 ## 相关
 文章：[微信小程序之购物车功能](https://github.com/lin-xin/blog/issues/14)

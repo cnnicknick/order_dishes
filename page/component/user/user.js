@@ -33,6 +33,13 @@ Page({
       }
     })
   },
+
+  onPullDownRefresh: function (options) {
+    setTimeout(function () {
+      wx.stopPullDownRefresh();
+    }, 1200);
+  },
+
   onShow(){
     var self = this;
     /**

@@ -19,6 +19,13 @@ Page({
       }
     })
   },
+
+  onPullDownRefresh: function (options) {
+    setTimeout(function () {
+      wx.stopPullDownRefresh();
+    }, 1200);
+  },
+
   formSubmit(e){
     const value = e.detail.value;
     if (value.name && value.phone && value.detail){
